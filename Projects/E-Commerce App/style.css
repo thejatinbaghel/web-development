@@ -91,3 +91,7 @@ h1, h2 {
 .checkout-btn:hover {
     background: #5a1bb5;
 }
+
+.hidden {
+    display: none;
+}
