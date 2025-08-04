@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(228, 223, 223);
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.todo{
+    background-color: rgb(24, 24, 24);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 3px;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;    
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    margin-top: 11px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+}
+
+input{
+    padding: 9px; /* Adjust value as needed */
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+input::placeholder {
+    color: #e6e6e6;
+     /* Placeholder text color */
+}
+
+.taskDelete {
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.taskAdd {
+    padding: 9px;
+    background-color: rgb(44, 44, 206);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.deleteButton {
+    background-color: red;
+    color: white;
+    border: none;
+}

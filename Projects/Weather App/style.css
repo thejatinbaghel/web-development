@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(228, 223, 223);
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+}
+
+.weather-app{
+    background-color: rgb(21, 21, 21);
+    border: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 5px;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input{
+    padding: 9px; /* Adjust value as needed */
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+}
+
+button{
+    padding: 9px;
+    background-color: rgb(0, 234, 255);
+    color: rgb(78, 78, 78);
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
