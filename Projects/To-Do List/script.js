@@ -21,6 +21,8 @@ addTaskButton.addEventListener("click", () =>{
 
     tasks.push(newTask);
     saveTasks();
+
+    
     renderTask(newTask);
     todoInput.value = "";
     console.log(tasks);
@@ -33,6 +35,11 @@ function renderTask(task){
     <span>${task.text}</span>
     <button class="deleteButton">delete</button>
     `;
+
+    // Add this line to reflect completed state on reload
+    if (task.completed) {
+        li.classList.add('completed');
+    }
 
     li.addEventListener("click", (e) => {
         if(e.target.tagName === 'BUTTON') return;

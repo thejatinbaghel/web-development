@@ -37,6 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
         renderCart();
     }
 
+    // cart.addEventListener("click", (e) => {
+    //     if(e.target.tagName === 'BUTTON'){
+    //         const removeProductId = parseInt(e.target.getAttribute('remove-data-id'));
+    //         const removeProduct = products.find(p => p.id === removeProductId);
+    //         removeFromCart(removeProduct);
+    //     }
+    // })
+    
+    // function removeFromCart(removeProduct){
+    //     cart.remove();
+    // }
+
     function renderCart(){
         cartItems.innerText = "";
         let totalPrice = 0;
@@ -48,7 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 totalPrice += item.price;
                 const cartItem = document.createElement('div');
                 cartItem.innerHTML = `  
-                ${item.name} - $${item.price.toFixed(2)}
+                <span>${item.name} - $${item.price.toFixed(2)}</span>
+                <button id='remove-item-btn' remove-item-id = ${item.id} class='remove-item'>Remove item</button>
                 `
                 cartItems.appendChild(cartItem);
                 totalPriceDisplay.textContent = `$${totalPrice}`;

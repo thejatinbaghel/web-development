@@ -58,6 +58,22 @@ h1, h2 {
     background: #5a1bb5;
 }
 
+.remove-item {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.remove-item:hover {
+    background: #ff0000;
+}
+
 .cart {
     background: none;
     padding: 0;
@@ -94,4 +110,11 @@ h1, h2 {
 
 .hidden {
     display: none;
+}
+
+.cart div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
 }
