@@ -35,7 +35,7 @@ app.get("/edit/:fileName", (req, res) => {
 })
 
 app.post("/edit", (req, res) => {
-    fs.rename(`./files/${req.body.previous}`, `/files/${req.body.new}`, function(err){
+    fs.rename(`./files/${req.body.previous}`, `./files/${req.body.new}`, function(err){
         res.redirect("/");
     })
 })
